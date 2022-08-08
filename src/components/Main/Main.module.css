@@ -1,0 +1,44 @@
+.container_main {
+  position: relative;
+  display: flex;
+  height: 342px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main {
+  position: absolute;
+  width: 49px;
+  height: 82px;
+  top: 104px;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main_kapusta {
+  position: absolute;
+  width: 183px;
+  height: 63px;
+  top: 86px;
+  left: 49px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  width: 83px;
+  height: 89px;
+  bottom: 0;
+  left: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -9px;
+  margin-left: 6px;
+
+  z-index: -100;
+}
