@@ -39,3 +39,41 @@
   margin-left: 15px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 767.98px) {
+  .user__name {
+    display: none;
+  }
+
+  .logoutExit {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    margin-right: 10px;
+  }
+
+  .user__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+  }
+
+  .logoutExit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: underline;
+  }
+
+  .logout {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+}

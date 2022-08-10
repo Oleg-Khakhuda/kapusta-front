@@ -18,6 +18,10 @@ export const Header = () => {
               <button className={s.button}>
                 <img src={logout} alt="Logout" className={s.logout} />
               </button>
+              <span className={s.user__name}>userName</span>
+              <a href="/" className={s.logoutExit}>
+                Выйти
+              </a>
             </div>
           )}
         </nav>

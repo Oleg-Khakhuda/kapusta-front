@@ -1,21 +1,15 @@
 .modal {
   width: 300px;
-  position: relative;
-  left: 50%;
-  top: 200px;
-  transform: translate(-50%, -200px);
+  position: absolute;
+  top: 255px;
   background: #ffffff;
   box-shadow: 5px 10px 20px rgba(170, 178, 197, 0.4);
   border-radius: 30px;
-  margin-top: 200px;
-  overflow: hidden;
   padding: 40px 29px 53px 29px;
   z-index: 100;
 }
 
 .title_text {
-  display: block;
-
   margin-bottom: 24px;
   text-align: center;
   font-size: 10px;
@@ -108,4 +102,39 @@
 .button_reg:hover,
 .button_reg:focus {
   background-color: var(--main-color);
+}
+
+@media screen and (max-width: 1279.98px) {
+  .modal {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 436px;
+    top: 297px;
+    padding: 50px 85px 53px 86px;
+  }
+
+  .title_text {
+    margin-bottom: 20px;
+  }
+
+  .label_block {
+    margin-bottom: 10px;
+  }
+
+  .input_mail,
+  .input_password {
+    width: 265px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal {
+    top: 174px;
+    right: 110px;
+  }
 }
