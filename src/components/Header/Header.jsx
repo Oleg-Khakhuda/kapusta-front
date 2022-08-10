@@ -1,26 +1,27 @@
-import React from "react";
-import logo from "../../assets/logo.svg";
-import logout from "../../assets/logout.svg";
-import { Container } from "../../Utils/Container/Container";
-import s from "./Header.module.css";
+import React from 'react'
+import logo from '../../assets/logo.svg'
+import logout from '../../assets/logout.svg'
+import { Container } from '../../Utils/Container/Container'
+import s from './Header.module.css'
 
-const isAuth = true;
+const isAuth = true
 
 export const Header = () => {
-    return (
-            <Container>
-        <div className={s.header}>
-                <nav className={s.header_nav}>
-                    <img src={logo} alt="Logo" className={s.logo} />
-                {isAuth && 
-                <div className={s.auth_container}>
-                    <div className={s.name}>U</div>
-                    <button className={s.button}>
-                    <img src={logout} alt="Logout" className={s.logout} />
-                    </button>
-                </div>}
-                </nav> 
-        </div>
-            </Container>             
-    );
+  return (
+    <Container>
+      <div className={s.header}>
+        <nav className={s.header_nav}>
+          <img src={logo} alt="Logo" className={s.logo} />
+          {isAuth && (
+            <div className={s.auth_container}>
+              <div className={s.name}>U</div>
+              <button className={s.button}>
+                <img src={logout} alt="Logout" className={s.logout} />
+              </button>
+            </div>
+          )}
+        </nav>
+      </div>
+    </Container>
+  )
 }

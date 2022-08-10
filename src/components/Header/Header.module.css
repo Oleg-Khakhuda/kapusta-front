@@ -3,8 +3,6 @@
 }
 
 .header {
-  width: 282px;
-  height: 56px;
   padding-top: 12px;
   padding-bottom: 13px;
 }
@@ -18,7 +16,6 @@
 .logo {
   width: 90px;
   height: 31px;
-  margin-right: 129px;
   cursor: pointer;
 }
 

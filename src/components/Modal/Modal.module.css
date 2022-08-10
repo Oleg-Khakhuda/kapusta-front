@@ -1,19 +1,21 @@
 .modal {
   width: 300px;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%, -200px);
   background: #ffffff;
   box-shadow: 5px 10px 20px rgba(170, 178, 197, 0.4);
   border-radius: 30px;
-  margin-left: -9px;
   margin-top: 200px;
-  /* margin-bottom: 76px; */
   overflow: hidden;
   padding: 40px 29px 53px 29px;
-  /* z-index: 100; */
+  z-index: 100;
 }
 
 .title_text {
+  display: block;
+
   margin-bottom: 24px;
   text-align: center;
   font-size: 10px;
