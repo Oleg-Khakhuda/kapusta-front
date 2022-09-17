@@ -1,0 +1,19 @@
+.custom_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 125px;
+  height: 44px;
+  color: var(--title-color);
+  border-radius: 16px;
+  border: none;
+  background-color: var(--btn-background-color);
+  cursor: pointer;
+}
+
+.custom_button:hover,
+.custom_button:focus {
+  background-color: var(--main-color);
+  color: var(--primary-write-color);
+}

@@ -1,0 +1,33 @@
+.dateForm {
+  width: 74px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
+}
+
+.calendar_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+}
+
+.calendar {
+  margin-right: 10px;
+}
+
+.date_piker {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 74px;
+  height: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+  outline: none;
+  font-weight: var(--black-font-weight);
+  text-transform: uppercase;
+  color: var(--text-color);
+}

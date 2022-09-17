@@ -1,12 +1,14 @@
 import { Header } from './components/Header/Header'
-import { Main } from './components/Main/Main'
+import { Login } from './components/Login/Login'
 import { Container } from './Utils/Container/Container'
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
+      <Container>
+        <Header />
+        <Login />
+      </Container>
     </>
   )
 }

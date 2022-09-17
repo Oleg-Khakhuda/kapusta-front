@@ -11,7 +11,9 @@ export const Header = () => {
     <Container>
       <div className={s.header}>
         <nav className={s.header_nav}>
-          <img src={logo} alt="Logo" className={s.logo} />
+          <a href="/">
+            <img src={logo} alt="Logo" className={s.logo} />
+          </a>
           {isAuth && (
             <div className={s.auth_container}>
               <div className={s.name}>U</div>

@@ -3,6 +3,8 @@ import google from '../../assets/google.svg'
 import bg2 from '../../assets/bg-kapusta2.svg'
 import s from './Modal.module.css'
 
+import { Button } from '../Button/Button'
+
 export const Modal = () => {
   return (
     <div className={s.modal}>
@@ -35,8 +37,8 @@ export const Modal = () => {
           <input type="password" placeholder="Пароль" id="password" className={s.input_password} />
         </div>
         <div className={s.button_block}>
-          <button className={s.button_enter}>ВВІЙТИ</button>
-          <button className={s.button_reg}>РЕЄСТРАЦІЯ</button>
+          <Button name="ВВІЙТИ" />
+          <Button name="РЕЄСТРАЦІЯ" />
         </div>
       </form>
     </div>

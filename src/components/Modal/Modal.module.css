@@ -5,7 +5,7 @@
   background: #ffffff;
   box-shadow: 5px 10px 20px rgba(170, 178, 197, 0.4);
   border-radius: 30px;
-  padding: 40px 29px 53px 29px;
+  padding: 40px 18px 53px 29px;
   z-index: 100;
 }
 
@@ -23,6 +23,7 @@
   filter: drop-shadow(1px 2px 3px rgba(170, 178, 197, 0.2));
   border-radius: 25px;
   border: none;
+  outline: none;
   padding: 10px 20px 10px 47px;
   cursor: pointer;
   margin-bottom: 30px;
@@ -34,6 +35,8 @@
   display: flex;
   width: 18px;
   height: 18px;
+  border: none;
+  outline: none;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,6 +65,7 @@
   color: var(--placeholder-color);
   border-radius: 25px;
   border: none;
+  outline: none;
   padding: 17px 20px;
   background-color: var(--btn-background-color);
   margin-bottom: 30px;
@@ -73,9 +77,16 @@
 
 .button_block {
   display: flex;
+  justify-content: space-between;
 }
 
-.button_enter,
+@media screen and (max-width: 767.98px) {
+  .button_block {
+    margin-left: -17px;
+  }
+}
+
+/* .button_enter,
 .button_reg {
   display: flex;
   justify-content: center;
@@ -88,6 +99,7 @@
   padding: 12px 34px;
   background-color: var(--btn-background-color);
   margin-left: -12px;
+  cursor: pointer;
 }
 
 .button_reg {
@@ -102,7 +114,8 @@
 .button_reg:hover,
 .button_reg:focus {
   background-color: var(--main-color);
-}
+  color: var(--primary-write-color);
+} */
 
 @media screen and (max-width: 1279.98px) {
   .modal {

@@ -1,0 +1,48 @@
+.item {
+  border-bottom: 1px solid var(--btn-background-color);
+  margin-bottom: 10px;
+}
+
+.item_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.box {
+  /* display: flex; */
+}
+
+.title {
+  width: 168px;
+  height: 20px;
+  font-weight: var(--bold-font-weight);
+  margin-bottom: 3px;
+  color: var(--text-color);
+}
+
+.date_option {
+  display: flex;
+}
+
+.date,
+.category {
+  font-size: 8px;
+  line-height: 9px;
+
+  color: var(--text-color);
+}
+.date {
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.income_del {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  margin-right: 20px;
+}

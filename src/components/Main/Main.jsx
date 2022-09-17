@@ -1,24 +1,47 @@
 import React from 'react'
-import { Modal } from '../../components/Modal/Modal'
-import { Container } from '../../Utils/Container/Container'
-import background from '../../assets/background.png'
-import bg1 from '../../assets/bg-kapusta.svg'
-import bg2 from '../../assets/bg-kapusta2.svg'
-import kapusta from '../../assets/kapustaMob.svg'
+import { Button } from '../Button/Button'
+import income from '../../assets/graph.svg'
+import { Hint } from '../../Utils/Hint/Hint'
+import { Calendar } from '../Date/Date'
+import { ListMobile } from '../ListMobile/ListMobile'
 import s from './Main.module.css'
 
-const isAuth = false
+import { useState } from 'react'
+
+// import { Link } from 'react-router-dom'
 
 export const Main = () => {
   return (
-    <>
-      <div className={s.container_main}></div>
-      <Container>
-        {!isAuth ? <Modal /> : <h1>Привет!</h1>}
-        <div className={s.main} style={{ backgroundImage: `url(${bg1})` }}></div>
-        <div className={s.main_kapusta} style={{ backgroundImage: `url(${kapusta})` }}></div>
-        <div className={s.bg2} style={{ backgroundImage: `url(${bg2})` }}></div>
-      </Container>
-    </>
+    <div className={s.main}>
+      <div className={s.blockIncome}>
+        <a className={s.report} href="/reports">
+          Перейти до звітів
+          <div className={s.income} style={{ backgroundImage: `url(${income})` }}></div>
+        </a>
+      </div>
+
+      <h3 className={s.balans_title}>Баланс:</h3>
+      <div>
+        <form type="submit" className={s.enter}>
+          <input type="text" placeholder="00.00 грн" id="balance" className={s.input_balance} />
+          <Button className={s.button}>підтвердити</Button>
+        </form>
+      </div>
+
+      {/* <Hint /> */}
+
+      <Calendar />
+
+      <ListMobile />
+
+      <ul className={s.button_bottom}>
+        <li className={s.item1}>
+          <Button className={`${s.btn} ${s.expense_btn}`}>ВИТРАТИ</Button>
+        </li>
+        <li className={s.item2}>
+          <Button className={`${s.btn} ${s.income_btn}`}>ДОХІД</Button>
+        </li>
+      </ul>
+    </div>
   )
 }
