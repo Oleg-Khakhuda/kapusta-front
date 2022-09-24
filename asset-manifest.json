@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kapusta-front/static/css/main.567d48b2.css",
-    "main.js": "/kapusta-front/static/js/main.1fc6a69f.js",
+    "main.css": "/kapusta-front/static/css/main.0fb80af3.css",
+    "main.js": "/kapusta-front/static/js/main.c0bd2d76.js",
     "static/media/bg-kapustaTab.svg": "/kapusta-front/static/media/bg-kapustaTab.90f5a509ad786523e1b6beab7cc2fe99.svg",
     "static/media/bg-kapusta2Tab.svg": "/kapusta-front/static/media/bg-kapusta2Tab.9ff43966e2b4ab58a66cbec361d29629.svg",
     "static/media/bg-kapusta2.svg": "/kapusta-front/static/media/bg-kapusta2.61c8014b229fe554186f6b2e7ab0700d.svg",
@@ -10,15 +10,17 @@
     "static/media/logo.svg": "/kapusta-front/static/media/logo.9a1219fa7b0c5ccef923ebbd77f9ee7b.svg",
     "static/media/calendar.svg": "/kapusta-front/static/media/calendar.a2e8789ebe7e1c5a265d91017d58a402.svg",
     "static/media/google.svg": "/kapusta-front/static/media/google.cf3c7e5ea68a2c42829c694a69313578.svg",
+    "static/media/calculator.svg": "/kapusta-front/static/media/calculator.bd74ce3461a4518efe3d33f529d436cb.svg",
     "static/media/delete1.svg": "/kapusta-front/static/media/delete1.f34a6444c869ce9430f662a8ddaf8e6e.svg",
     "index.html": "/kapusta-front/index.html",
     "static/media/logout.svg": "/kapusta-front/static/media/logout.51fb5135cc6397ba13bbe39d96aac8f4.svg",
+    "static/media/back.svg": "/kapusta-front/static/media/back.420a10fd9c9a52c9b30cbb0be1b001bf.svg",
     "static/media/graph.svg": "/kapusta-front/static/media/graph.bc8c7794e0319c193426ed26ff0c36af.svg",
-    "main.567d48b2.css.map": "/kapusta-front/static/css/main.567d48b2.css.map",
-    "main.1fc6a69f.js.map": "/kapusta-front/static/js/main.1fc6a69f.js.map"
+    "main.0fb80af3.css.map": "/kapusta-front/static/css/main.0fb80af3.css.map",
+    "main.c0bd2d76.js.map": "/kapusta-front/static/js/main.c0bd2d76.js.map"
   },
   "entrypoints": [
-    "static/css/main.567d48b2.css",
-    "static/js/main.1fc6a69f.js"
+    "static/css/main.0fb80af3.css",
+    "static/js/main.c0bd2d76.js"
   ]
 }
