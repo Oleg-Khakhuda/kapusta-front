@@ -10,10 +10,19 @@
   margin-right: auto;
 }
 
+.inputEnter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 83px;
+}
+
 .input {
   width: 100%;
   height: 44px;
+  font-size: 12px;
   border: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   background-color: inherit;
   border-radius: 20px 20px 0 0;
   outline: none;
@@ -26,11 +35,55 @@
   color: #c7ccdc;
 }
 
+.inputCalc {
+  text-align: right;
+  font-weight: var(--bold-font-weight);
+  width: 125px;
+  height: 44px;
+  border: 2px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-radius: 22px 0px 0px 22px;
+  background-color: inherit;
+  padding: 12px 17px 12px 3px;
+  outline: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.inputCalc::placeholder {
+  font-weight: var(--bold-font-weight);
+  color: #000000;
+}
+
+.calculator {
+  width: 60px;
+  height: 44px;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-radius: 22px 0px 0px 22px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.calcImg {
+  width: 20px;
+  height: 20px;
+}
+
 .button_bottom {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.btn {
+.expense_btn {
+  margin-right: 15px;
+}
+
+.expense_btn:hover {
+  filter: drop-shadow(1px 3px 5px rgba(255, 107, 8, 0.35));
+}
+
+.income_btn:hover {
+  filter: drop-shadow(1px 3px 5px rgba(255, 107, 8, 0.35));
 }

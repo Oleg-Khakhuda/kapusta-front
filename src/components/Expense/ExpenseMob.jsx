@@ -13,15 +13,19 @@ export const ExpenseMob = () => {
         <label className={s.label}>
           <input type="text" placeholder="Опис товару" className={s.input} />
         </label>
-        {/* <div className={s.select}> */}
+
         <DropSelect options={options} />
-        {/* </div> */}
-        <label>
-          <input type="text" placeholder="00.00 ГРН" />
-          <div>
-            <Calculator />
+
+        <div className={s.inputEnter}>
+          <div className={s.enterCalc}>
+            <label className={s.labelCalc}>
+              <input className={s.inputCalc} type="text" placeholder="00.00 ГРН" />
+            </label>
           </div>
-        </label>
+          <div className={s.calculator}>
+            <Calculator className={s.calcImg} />
+          </div>
+        </div>
         <ul className={s.button_bottom}>
           <li>
             <Button className={`${s.btn} ${s.expense_btn}`}>ДОДАТИ</Button>

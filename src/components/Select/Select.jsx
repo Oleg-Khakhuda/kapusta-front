@@ -1,43 +1,49 @@
 import React from 'react'
 import Select from 'react-select'
 
-const customStyles = {
-  option: (provided, state) => ({
-    ...provided,
-    color: state.isFocused ? '#52555F' : '#C7CCDC',
+// const customStyles = {
+//   container: () => ({
+//     border: '2px solid #FFFFFF',
+//   }),
 
-    paddingLeft: 20,
-  }),
+//   option: (provided, state) => ({
+//     ...provided,
+//     color: state.isFocused ? '#52555F' : '#C7CCDC',
 
-  control: () => ({
-    // none of react-select's styles are passed to <Control />
-  }),
+//     paddingLeft: 20,
+//   }),
 
-  singleValue: provided => {
-    const color = '#52555F'
-    const transition = 'opacity 250ms'
+//   control: () => ({
+//     // border: '2px solid #F5F6FB',
+//   }),
 
-    return { ...provided, color, transition }
-  },
+//   // dropdownIndicator: (provided, state) => ({
+//   //   ...provided,
+//   //   width: state.selectProps.width,
+//   //   height: state.selectProps.height,
+//   //   border: '22px solid #F5F6FB',
+//   // }),
 
-  menu: (provided, state) => ({
-    ...provided,
-    width: state.selectProps.width,
-    // height: state.selectProps.height,
-    border: '2px solid #F5F6FB',
-    boxShadow: '0px 3px 4px rgba(170, 178, 197, 0.4)',
-  }),
-}
+//   singleValue: provided => {
+//     const color = '#52555F'
+//     const transition = 'opacity 250ms'
+
+//     return { ...provided, color, transition }
+//   },
+
+//   menu: (provided, state) => ({
+//     ...provided,
+//     width: state.selectProps.width,
+//     height: state.selectProps.height,
+//   }),
+
+//   menuList: (provided, state) => ({
+//     background: '#FFFFFF',
+
+//     boxShadow: '0px 3px 4px rgba(170, 178, 197, 0.4)',
+//   }),
+// }
 
 export const DropSelect = ({ onChange, options }) => {
-  return (
-    <Select
-      width="100%"
-      // height="44px"
-      styles={customStyles}
-      onChange={onChange}
-      placeholder="Категорія товару"
-      options={options}
-    />
-  )
+  return <Select classNamePrefix="react-select" onChange={onChange} placeholder="Категорія товару" options={options} />
 }

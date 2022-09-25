@@ -44,6 +44,7 @@
 }
 
 .input_balance::placeholder {
+  font-weight: var(--bold-font-weight);
   color: #000000;
 }
 
